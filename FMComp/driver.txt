@@ -1,0 +1,3 @@
+fmdriver.asm is the current source for the audio driver designed to play track data created with FM Composer. It assumes the hardware is currently set up to support the track being played. to use, simply include the file in your code, then call loadSong with hl pointing to the start of the track data to prep the driver for playback. you'll want to call updateMusic at some point each frame to update the notes.
+
+if you don't need the song name + author tags, or would like to relocate the used ram addresses, or want to extend it in some way, feel free to modify it as needed!
